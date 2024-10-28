@@ -5,6 +5,7 @@
     --color-heading:#1b0760;
     --color-body:#918c94;
 }
+/* ===============TOPOGRAPHY================*/
 html{
     font-size: 62.5%;   /* 62.5% of 16px = 10px */
 }
@@ -47,4 +48,30 @@ body{
     h3 {
       font-size: 2.4rem;
     }
+  }
+  /*=====================LINKS===================*/
+  a{
+    text-decoration: none;
+  }
+  .link-arrow{
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .link-arrow::after{
+    content: "-->";
+    margin-left: 5px;
+    transition: 0.5s;
+  }
+  .link-arrow:hover::after{
+    margin-left: 15px;
+    color: #2584ff;
+     
+  }
+  @media screen and (min-width:1024px) {
+    .link-arrow{
+      font-size: 1.5rem;
+    }
+    
   }
