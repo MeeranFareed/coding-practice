@@ -102,3 +102,25 @@ body{
     }
     
   }
+  /*===============List==================*/
+  .list{
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-heading);
+  }
+  .list--inline .list__item{
+    display: inline-block;
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size:2rem ;
+  }
+  .list--tick  {
+    list-style-image: url(../icons/tick.svg);
+    margin-left: 5rem;
+    
+
+  }
+  .list--tick .list__item{
+    padding-left: 1rem;
+    font-weight: bold;
+  }
